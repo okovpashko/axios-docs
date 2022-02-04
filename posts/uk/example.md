@@ -1,19 +1,19 @@
 ---
-title: 'Minimal Example'
-description: 'A little example of using axios'
-prev_title: 'Introduction'
+title: 'Короткі приклади'
+description: 'Короткі приклади використання Axios'
+prev_title: 'Початок роботи'
 prev_link: '/uk/docs/intro'
-next_title: 'POST Requests'
+next_title: 'POST запити'
 next_link: '/uk/docs/post_example'
 ---
 
 ## Примітка: використання CommonJS
-Для того, щоб отримати типи TypeScript (для intellisense / автозаповнення) під час використання імпорту CommonJS з `require()`, використовуйте такий підхід:
+Для того, щоб отримати типи TypeScript (для intellisense / автозаповнення) використовуючи CommonJS імпорти з `require()`, використовуйте такий підхід:
 
 ```js
 const axios = require('axios').default;
 
-// axios.<method> тепер забезпечуватиме автозаповнення та введення параметрів
+// axios.<method> тепер забезпечуватиме автозаповнення та типізацію параметрів
 ```
 
 # Example
@@ -64,5 +64,5 @@ async function getUser() {
 }
 ```
 
-> ** ПРИМІТКА: ** `async/await` є частиною ECMAScript 2017 і не підтримується в Інтернеті
-> Explorer та старіші веб -переглядачі, тому використовуйте їх з обережністю.
+> ** ПРИМІТКА: ** `async/await` є частиною ECMAScript 2017 і не підтримується в Internet
+> Explorer та старіших веб-переглядачах, тому використовуйте їх з обережністю.

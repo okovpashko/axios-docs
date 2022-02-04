@@ -1,13 +1,13 @@
 ---
 title: 'Axios API'
 description: 'Посилання на API Axios'
-prev_title: 'POST Requests'
+prev_title: 'POST запити'
 prev_link: '/uk/docs/post_example'
 next_title: 'Екземпляр Axios'
 next_link: '/uk/docs/instance'
 ---
 
-Запити можна подавати, передавши відповідну конфігурацію `axios`.
+Запити можна виконувати, передавши відповідну конфігурацію `axios`.
 
 ##### axios(config)
 
@@ -24,7 +24,7 @@ axios({
 ```
 
 ```js
-// GET-запит на віддалений образ у node.js
+// GET-запит на отримання зображення у node.js
 axios({
   method: 'get',
   url: 'http://bit.ly/2mTM3nY',
@@ -44,7 +44,7 @@ axios('/user/12345');
 
 ### Псевдоніми методу запиту
 
-Для зручності були надані псевдоніми для всіх підтримуваних методів запиту.
+Для зручності існують псевдоніми для всіх підтримуваних методів запиту.
 
 ##### axios.request(config)
 ##### axios.get(url[, config])
@@ -56,4 +56,4 @@ axios('/user/12345');
 ##### axios.patch(url[, data[, config]])
 
 ###### ПРИМІТКА
-При використанні методів псевдонімів `url`,` method` та `data` властивості не потрібно вказувати в config.
+При використанні методів-псевдонімів, властивості `url`,` method` та `data` не потрібно вказувати в config.

@@ -1,7 +1,7 @@
 ---
 title: 'POST Запити'
-description: 'Як виконувати запити POST за допомогою Axios'
-prev_title: 'Мінімальний приклад'
+description: 'Як виконувати POST запити за допомогою Axios'
+prev_title: 'Короткі приклади'
 prev_link: '/uk/docs/example'
 next_title: 'Axios API'
 next_link: '/uk/docs/api_intro'

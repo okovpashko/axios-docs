@@ -6,7 +6,7 @@ next_title: 'Конфігурація за замовчуванням'
 next_link: '/uk/docs/config_defaults'
 ---
 
-Відповідь на запит містить таку інформацію.
+Відповідь на запит містить наступну інформацію.
 
 ```js
 {
@@ -16,20 +16,20 @@ next_link: '/uk/docs/config_defaults'
   // `status` - це код стану HTTP з відповіді сервера
   status: 200,
 
-  // `statusText` - це повідомлення про стан HTTP від відповіді сервера
+  // `statusText` - це повідомлення HTTP статусу з відповіді сервера
   statusText: 'OK',
 
-  // `заголовки` заголовки HTTP, на які відповів сервер
-  // Усі назви заголовків малі та доступні за допомогою дужок.
+  // `headers` — це HTTP заголовки з відповіді сервера
+  // Усі назви заголовків записані в нижньому регістрі та доступні за допомогою дужок.
   // Приклад: `response.headers['content-type']`
   headers: {},
 
-  // `config` - це конфігурація, надана` axios` для запиту
+  // `config` - це конфігурація запиту, яка була надана Axios
   config: {},
 
-  // `запит` - це запит, який створив цю відповідь
-  // Це останній екземпляр ClientRequest у node.js (у переспрямуваннях)
-  // і екземпляр XMLHttpRequest у веб -переглядачі
+  // `запит` - це запит, який згенерував цю відповідь
+  // Це останній екземпляр ClientRequest у Node.js (при переспрямуваннях)
+  // і екземпляр XMLHttpRequest у веб-переглядачі
   request: {}
 }
 ```
@@ -47,4 +47,4 @@ axios.get('/user/12345')
   });
 ```
 
-При використанні `catch` або передачі [rejection колбеку](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then) як другого параметра `then` відповідь буде доступна через об'єкт `error`, як пояснюється в [Обробці помилок](/uk/docs/handling_errors) section.
+При використанні `catch` або передачі [rejection колбеку](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then) як другого параметра `then`, відповідь буде доступна через об'єкт `error`, як пояснюється в розділі [Обробка помилок](/uk/docs/handling_errors).
